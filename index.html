@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A research-backed opportunity map of 100 apps for AI agent toolkits.">
+  <title>Where agents can actually connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#top"><span>COMPOSIO</span> / PRODUCT OPS</a><span class="stamp">RESEARCH SNAPSHOT · 23 NOV 2026</span></header>
+  <main id="top">
+    <section class="hero wrap">
+      <div class="eyebrow">100 apps · 10 categories · 1 practical question</div>
+      <h1>Where can an agent<br><em>actually</em> connect?</h1>
+      <p class="lede">A field map of the auth, access, and API friction behind the next 100 agent toolkits—built by an agent, corrected by a human.</p>
+      <div class="hero-grid">
+        <article class="headline-card"><span class="kicker">THE HEADLINE</span><strong id="headlineMetric">—</strong><p>are buildable now. The real constraint is rarely “no API”; it is access, approval, or product ambiguity.</p></article>
+        <div class="metrics" id="metrics"></div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="wrap">
+        <div class="section-head"><div><span class="eyebrow">01 / SIGNAL</span><h2>The opportunity map</h2></div><p>Build the broad, self-serve middle first. Treat partner APIs as outreach—not engineering backlog.</p></div>
+        <div class="matrix-wrap">
+          <div class="matrix-label y">ACCESS FRICTION →</div>
+          <div class="matrix" id="matrix"></div>
+          <div class="matrix-label x">API READINESS →</div>
+        </div>
+        <div class="insights">
+          <article><span>01</span><h3>OAuth wins the volume game</h3><p id="oauthInsight"></p></article>
+          <article><span>02</span><h3>“Public docs” ≠ self-serve</h3><p id="gatedInsight"></p></article>
+          <article><span>03</span><h3>The long tail needs humans</h3><p>Partner-only, enterprise-only, and undocumented products need outreach or a scoped browser workflow—not invented endpoints.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="section-head"><div><span class="eyebrow">02 / EVIDENCE</span><h2>All 100, inspectable</h2></div><p>Every claim carries a source and confidence label. Search, filter, and open the first-party evidence.</p></div>
+      <div class="controls">
+        <label class="search"><span>⌕</span><input id="search" placeholder="Search an app, category, auth…"></label>
+        <select id="category"><option value="all">All categories</option></select>
+        <select id="verdict"><option value="all">All verdicts</option><option>Build now</option><option>Needs outreach</option><option>Unclear</option><option>Blocked</option></select>
+        <button id="reset" type="button">Reset</button>
+      </div>
+      <p class="result-count" id="resultCount"></p>
+      <div class="table-shell">
+        <table><thead><tr><th>App / what it does</th><th>Auth</th><th>Access</th><th>API surface</th><th>Verdict</th><th>Evidence</th></tr></thead><tbody id="rows"></tbody></table>
+      </div>
+    </section>
+
+    <section class="section warm">
+      <div class="wrap">
+        <div class="section-head"><div><span class="eyebrow">03 / THE AGENT</span><h2>A researcher with a brake pedal</h2></div><p>The useful automation is not “answer 100 times.” It is a loop that gathers, cites, challenges, and escalates.</p></div>
+        <div class="flow">
+          <div><b>01</b><strong>Discover</strong><p>Find official developer, auth, pricing, and MCP pages.</p></div><i>→</i>
+          <div><b>02</b><strong>Extract</strong><p>Return strict structured fields plus claim-level URLs.</p></div><i>→</i>
+          <div><b>03</b><strong>Challenge</strong><p>Flag contradictions, missing evidence, and weak confidence.</p></div><i>→</i>
+          <div class="human"><b>04</b><strong>Human gate</strong><p>Review gated claims and a stratified sample before publish.</p></div>
+        </div>
+        <div class="agent-grid">
+          <article><span class="kicker">AUTOMATED WELL</span><ul><li>Source discovery and deduplication</li><li>Structured extraction</li><li>Cross-row consistency checks</li><li>Checkpointing and reruns</li></ul></article>
+          <article><span class="kicker">NEEDS A HUMAN</span><ul><li>Partner-program interpretation</li><li>Docs hidden after login</li><li>Commercial eligibility</li><li>Final evidence promotion</li></ul></article>
+          <article class="code-card"><span class="kicker">RUN IT</span><code>npm run research -- --limit 10</code><p>Uses the current Composio SDK for tool discovery, writes JSONL checkpoints, and never silently overwrites curated findings.</p><a href="https://github.com/composiohq/composio" target="_blank" rel="noreferrer">Composio SDK ↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="wrap">
+        <div class="section-head"><div><span class="eyebrow">04 / VERIFICATION</span><h2>Trust came from the second pass</h2></div><p>A stratified 10-app sample was re-checked by hand against first-party docs. Corrections remain visible.</p></div>
+        <div class="audit-summary"><strong>8/19</strong><span>agent findings accepted</span><strong>11</strong><span>material corrections</span><strong>0</strong><span>uncited claims promoted</span></div>
+        <div class="audit-grid" id="auditGrid"></div>
+        <p class="method-note">Sample design: an initial ten-app stratified audit, plus preserved Aircall, Twenty, Zoho CRM, Devin, Higgsfield, GoHighLevel, Twilio, Airtable, and Linear corrections supplied during review. “Accepted” means the central auth/access/API claim matched the cited first-party page—not that every endpoint was exhaustively tested.</p>
+      </div>
+    </section>
+
+    <section class="closing wrap"><span class="eyebrow">THE DECISION</span><h2>Ship the self-serve majority.<br>Route ambiguity to people.</h2><p>Start with OAuth and token-based platforms that expose stable REST or GraphQL docs. Build a commercial-outreach queue for the gated minority. Re-research low-confidence rows before roadmap commitment.</p><a class="cta" href="#top">Explore the data ↑</a></section>
+  </main>
+  <footer><span>AI PRODUCT OPS · TAKE-HOME</span><span>Sources are first-party where available · snapshot, not a guarantee</span></footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

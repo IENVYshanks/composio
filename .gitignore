@@ -1,0 +1,6 @@
+node_modules/
+.env
+research/runs/*.jsonl
+!agent/fixtures/*.jsonl
+.DS_Store
+npm-debug.log*

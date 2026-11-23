@@ -1,0 +1,5343 @@
+{
+  "generated_at": "2026-11-23T10:56:18.080Z",
+  "source_run": "deep-2026-11-23T10-54-13-003Z.jsonl",
+  "method": "multi-page deterministic evidence crawl; human audit overrides applied in UI",
+  "rows": [
+    {
+      "app": "Ahrefs",
+      "category": "Data, SEO & Scraping",
+      "one_line": "Collects web data, rankings, enrichment, and search intelligence.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "approval-gated",
+      "api_surface": "REST + MCP",
+      "mcp": "documented signal found",
+      "verdict": "needs-outreach",
+      "blocker": "Both self-serve and gated language found; human must identify which API product each applies to.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://docs.ahrefs.com/en/mcp/docs/introduction"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://docs.ahrefs.com/en/api/docs/introduction"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://docs.ahrefs.com/en/api/docs/introduction"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://docs.ahrefs.com/en/mcp/docs/introduction"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://ahrefs.com/pricing"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://ahrefs.com/pricing"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://ahrefs.com/pricing",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": true,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:42.776Z"
+    },
+    {
+      "app": "Aircall",
+      "category": "Communications & Messaging",
+      "one_line": "Sends messages, calls, and team communications.",
+      "auth": [
+        "OAuth 2.0",
+        "API key",
+        "API token",
+        "Basic"
+      ],
+      "access": "approval-gated",
+      "api_surface": "REST + Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "needs-outreach",
+      "blocker": "Both self-serve and gated language found; human must identify which API product each applies to.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developers.aircall.io/api-references"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://developers.aircall.io/api-references"
+        },
+        {
+          "claim": "Authentication signal: API token",
+          "url": "https://developers.aircall.io/api-references"
+        },
+        {
+          "claim": "Authentication signal: Basic",
+          "url": "https://developers.aircall.io/api-references"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://developers.aircall.io/api-references"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developers.aircall.io/api-references"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://legal.aircall.io/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://legal.aircall.io/"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developers.aircall.io/api-references",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.aircall.io/images/api-references/authentication/oauth-e7de2c2f.png",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.aircall.io/api-references",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://legal.aircall.io/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": true,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:31.877Z"
+    },
+    {
+      "app": "Airtable",
+      "category": "Productivity & Project Management",
+      "one_line": "Coordinates documents, projects, tasks, and time.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://airtable.com/developers/web/api/introduction",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://airtable.com/developers/web/api/introduction.md",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:49.886Z"
+    },
+    {
+      "app": "Amazon Selling Partner",
+      "category": "Ecommerce",
+      "one_line": "Manages storefronts, products, orders, and sellers.",
+      "auth": [],
+      "access": "self-serve",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developer-docs.amazon/sp-api/"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developer-docs.amazon/sp-api/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:39.948Z"
+    },
+    {
+      "app": "Apify",
+      "category": "Data, SEO & Scraping",
+      "one_line": "Collects web data, rankings, enrichment, and search intelligence.",
+      "auth": [
+        "OAuth 2.0",
+        "API key",
+        "API token"
+      ],
+      "access": "self-serve",
+      "api_surface": "Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://docs.apify.com/api/v2"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://docs.apify.com/api/v2"
+        },
+        {
+          "claim": "Authentication signal: API token",
+          "url": "https://docs.apify.com/api/v2"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.apify.com/api/v2"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://docs.apify.com/api/v2"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.apify.com/api/v2",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:42.814Z"
+    },
+    {
+      "app": "Asana",
+      "category": "Productivity & Project Management",
+      "one_line": "Coordinates documents, projects, tasks, and time.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "REST + Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Authentication method not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://developers.asana.com/reference/rest-api-reference"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developers.asana.com/reference/rest-api-reference"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developers.asana.com/reference/rest-api-reference",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.asana.com/reference/rest-api-reference",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.asana.com/reference/access-requests",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.asana.com/reference/getaccessrequests",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:52.090Z"
+    },
+    {
+      "app": "Attio",
+      "category": "CRM & Sales",
+      "one_line": "Manages customer relationships, deals, and sales activity.",
+      "auth": [
+        "OAuth 2.0",
+        "API key",
+        "Basic"
+      ],
+      "access": "self-serve",
+      "api_surface": "REST + MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://docs.attio.com/rest-api/overview"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://docs.attio.com/rest-api/guides/authentication"
+        },
+        {
+          "claim": "Authentication signal: Basic",
+          "url": "https://docs.attio.com/rest-api/guides/authentication"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://docs.attio.com/rest-api/overview"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://docs.attio.com/rest-api/overview"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.attio.com/rest-api/overview"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://docs.attio.com/rest-api/guides/authentication"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://docs.attio.com/rest-api/overview",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.attio.com/rest-api/guides/authentication",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.attio.com/rest-api/guides/webhooks",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.attio.com/rest-api/tutorials/connect-an-app-through-oauth",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:16.208Z"
+    },
+    {
+      "app": "BigCommerce",
+      "category": "Ecommerce",
+      "one_line": "Manages storefronts, products, orders, and sellers.",
+      "auth": [
+        "OAuth 2.0",
+        "API key",
+        "API token"
+      ],
+      "access": "approval-gated",
+      "api_surface": "GraphQL + MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "needs-outreach",
+      "blocker": "Both self-serve and gated language found; human must identify which API product each applies to.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/customer-impersonation-token/list-customer-impersonation-tokens"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/customer-impersonation-token/list-customer-impersonation-tokens"
+        },
+        {
+          "claim": "Authentication signal: API token",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/abandoned-carts"
+        },
+        {
+          "claim": "API surface signal: GraphQL",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/abandoned-carts"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/abandoned-carts"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/abandoned-carts"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/abandoned-carts"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/abandoned-carts"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/abandoned-carts",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/customer-impersonation-token/list-customer-impersonation-tokens",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/customer-impersonation-token/create-token-with-customer-impersonation",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/customer-impersonation-token/revoke-customer-impersonation-token-by-jti",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": true,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:39.977Z"
+    },
+    {
+      "app": "Binance",
+      "category": "Finance & Fintech",
+      "one_line": "Moves, reconciles, or enriches financial data.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/rest-api",
+          "status": 202,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:54.419Z"
+    },
+    {
+      "app": "Brex",
+      "category": "Finance & Fintech",
+      "one_line": "Moves, reconciles, or enriches financial data.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No supplied page could be read.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developer.brex.com/openapi",
+          "status": 404,
+          "ok": false,
+          "error": "HTTP 404"
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:56.596Z"
+    },
+    {
+      "app": "Bright Data",
+      "category": "Data, SEO & Scraping",
+      "one_line": "Collects web data, rankings, enrichment, and search intelligence.",
+      "auth": [
+        "API key"
+      ],
+      "access": "self-serve",
+      "api_surface": "REST + MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://docs.brightdata.com/api-reference/authentication"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://docs.brightdata.com/api-reference/authentication"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://docs.brightdata.com/api-reference/authentication"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.brightdata.com/api-reference/authentication"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://docs.brightdata.com/api-reference/authentication"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://docs.brightdata.com/api-reference/authentication",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.brightdata.com/api-reference/authentication",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.brightdata.com/integrations/introduction",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.brightdata.com/products/mcp-server/overview",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:44.896Z"
+    },
+    {
+      "app": "Clay",
+      "category": "Data, SEO & Scraping",
+      "one_line": "Collects web data, rankings, enrichment, and search intelligence.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No supplied page could be read.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://university.clay.com/en/articles/9672489-clay-api",
+          "status": 404,
+          "ok": false,
+          "error": "HTTP 404"
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:49.117Z"
+    },
+    {
+      "app": "ClickUp",
+      "category": "Productivity & Project Management",
+      "one_line": "Coordinates documents, projects, tasks, and time.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No supplied page could be read.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developer.clickup.com/reference/getting-started-with-the-clickup-api",
+          "status": 404,
+          "ok": false,
+          "error": "HTTP 404"
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:51.964Z"
+    },
+    {
+      "app": "Close",
+      "category": "CRM & Sales",
+      "one_line": "Manages customer relationships, deals, and sales activity.",
+      "auth": [
+        "OAuth 2.0",
+        "API key",
+        "Basic"
+      ],
+      "access": "self-serve",
+      "api_surface": "REST + MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developer.close.com/"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://developer.close.com/api/overview/api-key-authentication"
+        },
+        {
+          "claim": "Authentication signal: Basic",
+          "url": "https://developer.close.com/api/overview/api-key-authentication"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://developer.close.com/"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://developer.close.com/"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developer.close.com/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developer.close.com/integrations/create-an-oauth-app"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://developer.close.com/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.close.com/api/overview/api-key-authentication",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.close.com/integrations",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.close.com/integrations/create-an-oauth-app",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:19.807Z"
+    },
+    {
+      "app": "Cloudflare",
+      "category": "Developer, Infra & Data",
+      "one_line": "Operates code, deployments, infrastructure, databases, and observability.",
+      "auth": [
+        "OAuth 2.0",
+        "Basic"
+      ],
+      "access": "self-serve",
+      "api_surface": "GraphQL + MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developers.cloudflare.com/api/"
+        },
+        {
+          "claim": "Authentication signal: Basic",
+          "url": "https://developers.cloudflare.com/api/"
+        },
+        {
+          "claim": "API surface signal: GraphQL",
+          "url": "https://developers.cloudflare.com/api/"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://developers.cloudflare.com/api/"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developers.cloudflare.com/api/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developers.cloudflare.com/api/"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://developers.cloudflare.com/api/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/logs/subresources/access_requests/methods/list/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.cloudflare.com/api/resources/token_validation/subresources/configuration/subresources/credentials/methods/update/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.cloudflare.com/api/resources/token_validation/subresources/configuration/subresources/credentials/methods/edit/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:47.025Z"
+    },
+    {
+      "app": "Coda",
+      "category": "Productivity & Project Management",
+      "one_line": "Coordinates documents, projects, tasks, and time.",
+      "auth": [
+        "API key",
+        "API token"
+      ],
+      "access": "unclear",
+      "api_surface": "REST + MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://docs.superhuman.com/developers/apis/v1"
+        },
+        {
+          "claim": "Authentication signal: API token",
+          "url": "https://docs.superhuman.com/developers/apis/v1"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://docs.superhuman.com/developers/apis/v1"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://docs.superhuman.com/developers/apis/v1"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.superhuman.com/developers/apis/v1"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.superhuman.com/developers/apis/v1",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:53.303Z"
+    },
+    {
+      "app": "Consensus",
+      "category": "AI, Research & Media-native",
+      "one_line": "Creates, extracts, or searches AI-native media and knowledge.",
+      "auth": [
+        "API key"
+      ],
+      "access": "self-serve",
+      "api_surface": "MCP",
+      "mcp": "documented signal found",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://consensus.app/home/api/"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://consensus.app/home/api/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://consensus.app/home/api/"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://consensus.app/home/api/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://consensus.app/pricing/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://consensus.app/home/mcp/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://consensus.app/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:59.262Z"
+    },
+    {
+      "app": "Copper",
+      "category": "CRM & Sales",
+      "one_line": "Manages customer relationships, deals, and sales activity.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "unclear",
+      "api_surface": "Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developer.copper.com/"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developer.copper.com/"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developer.copper.com/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.copper.com/introduction/oauth/quickstart.html",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.copper.com/webhooks/notification-example.html",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.copper.com/index.html",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:19.082Z"
+    },
+    {
+      "app": "Datadog",
+      "category": "Developer, Infra & Data",
+      "one_line": "Operates code, deployments, infrastructure, databases, and observability.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "approval-gated",
+      "api_surface": "REST + MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "needs-outreach",
+      "blocker": "Both self-serve and gated language found; human must identify which API product each applies to.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://docs.datadoghq.com/api/latest/"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://docs.datadoghq.com/api/latest/"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://docs.datadoghq.com/api/latest/"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://docs.datadoghq.com/api/latest/"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.datadoghq.com/api/latest/"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://www.datadoghq.com/pricing/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://docs.datadoghq.com/api/latest/"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.datadoghq.com/api/latest/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.datadoghq.com/api/latest/webhooks-integration/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.datadoghq.com/pricing/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.datadoghq.com/product/internal-developer-portal/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": true,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:49.126Z"
+    },
+    {
+      "app": "DataForSEO",
+      "category": "Data, SEO & Scraping",
+      "one_line": "Collects web data, rankings, enrichment, and search intelligence.",
+      "auth": [],
+      "access": "self-serve",
+      "api_surface": "Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Authentication method not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.dataforseo.com/v3/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://dataforseo.com/pricing"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.dataforseo.com/v3/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://cdn.dataforseo.com/v3/examples/php/php_RestClient.zip",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://dataforseo.com/pricing",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/subregion_interests/live/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:42.392Z"
+    },
+    {
+      "app": "DealCloud",
+      "category": "CRM & Sales",
+      "one_line": "Manages customer relationships, deals, and sales activity.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "unclear",
+      "api_surface": "REST + MCP",
+      "mcp": "documented signal found",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://api.docs.dealcloud.com/docs/token"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://api.docs.dealcloud.com/docs/token"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://api.docs.dealcloud.com/docs/token"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://api.docs.dealcloud.com/mcp/getting-started"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://api.docs.dealcloud.com/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://api.docs.dealcloud.com/docs/token",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://api.docs.dealcloud.com/mcp/authentication",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:19.661Z"
+    },
+    {
+      "app": "Devin",
+      "category": "AI, Research & Media-native",
+      "one_line": "Creates, extracts, or searches AI-native media and knowledge.",
+      "auth": [
+        "API key",
+        "API token"
+      ],
+      "access": "approval-gated",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Both self-serve and gated language found; human must identify which API product each applies to.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://docs.devin.ai/api-reference/overview"
+        },
+        {
+          "claim": "Authentication signal: API token",
+          "url": "https://docs.devin.ai/api-reference/overview"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://docs.devin.ai/api-reference/personal-access-tokens"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://docs.devin.ai/api-reference/overview"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.devin.ai/api-reference/overview",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.devin.ai/api-reference/personal-access-tokens",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.devin.ai/api-reference/getting-started/teams-quickstart",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.devin.ai/api-reference/getting-started/enterprise-quickstart",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": true,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:55:00.989Z"
+    },
+    {
+      "app": "Discord",
+      "category": "Communications & Messaging",
+      "one_line": "Sends messages, calls, and team communications.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "unclear",
+      "api_surface": "REST + Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://docs.discord.com/developers/intro"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://docs.discord.com/developers/platform/oauth2-and-permissions"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.discord.com/developers/intro"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.discord.com/developers/intro",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.discord.com/developers/platform/webhooks",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://discord.com/developers/home",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:27.178Z"
+    },
+    {
+      "app": "Ecwid",
+      "category": "Ecommerce",
+      "one_line": "Manages storefronts, products, orders, and sellers.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "unclear",
+      "api_surface": "REST + Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://docs.ecwid.com/api-reference"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://docs.ecwid.com/api-reference"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.ecwid.com/api-reference"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.ecwid.com/api-reference",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.ecwid.com/api-reference/rest-api/rest-api-error-codes",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.ecwid.com/api-reference",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.ecwid.com/webhook-automations",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:41.744Z"
+    },
+    {
+      "app": "fanbasis",
+      "category": "Ecommerce",
+      "one_line": "Manages storefronts, products, orders, and sellers.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://commas.com/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:40.666Z"
+    },
+    {
+      "app": "Fathom",
+      "category": "AI, Research & Media-native",
+      "one_line": "Creates, extracts, or searches AI-native media and knowledge.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "self-serve",
+      "api_surface": "MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developers.fathom.ai/"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://developers.fathom.ai/"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://developers.fathom.ai/"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developers.fathom.ai/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developers.fathom.ai/"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://developers.fathom.ai/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.fathom.ai/mcp-docs",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.fathom.ai/quickstart",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.fathom.ai/webhooks",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:58.125Z"
+    },
+    {
+      "app": "Firecrawl",
+      "category": "Data, SEO & Scraping",
+      "one_line": "Collects web data, rankings, enrichment, and search intelligence.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "self-serve",
+      "api_surface": "REST + MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://docs.firecrawl.dev/api-reference/introduction"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://docs.firecrawl.dev/api-reference/introduction"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://docs.firecrawl.dev/authentication"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://docs.firecrawl.dev/api-reference/introduction"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.firecrawl.dev/api-reference/introduction"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://docs.firecrawl.dev/authentication"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://docs.firecrawl.dev/api-reference/introduction",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.firecrawl.dev/api-reference/endpoint/developer-search",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.firecrawl.dev/authentication",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:43.457Z"
+    },
+    {
+      "app": "Freshdesk",
+      "category": "Support & Helpdesk",
+      "one_line": "Runs customer conversations, tickets, and support workflows.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "self-serve",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developers.freshdesk.com/api/"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://developers.freshdesk.com/api/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developers.freshdesk.com/api/"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developers.freshdesk.com/api/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://support.freshdesk.com/support/solutions/articles/196581-automatic-ticket-assignment-in-a-group-round-robin-",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:22.491Z"
+    },
+    {
+      "app": "Front",
+      "category": "Support & Helpdesk",
+      "one_line": "Runs customer conversations, tickets, and support workflows.",
+      "auth": [
+        "OAuth 2.0",
+        "API token"
+      ],
+      "access": "self-serve",
+      "api_surface": "MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://dev.frontapp.com/docs/welcome"
+        },
+        {
+          "claim": "Authentication signal: API token",
+          "url": "https://dev.frontapp.com/docs/getting-started-with-partner-channels"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://dev.frontapp.com/docs/welcome"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://dev.frontapp.com/docs/welcome"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://dev.frontapp.com/docs/welcome"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://dev.frontapp.com/docs/welcome",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://dev.frontapp.com/docs/getting-started-with-partner-channels",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://dev.frontapp.com/docs/creating-a-links-integration",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://dev.frontapp.com/docs/partnering-with-front",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:22.502Z"
+    },
+    {
+      "app": "GitHub",
+      "category": "Developer, Infra & Data",
+      "one_line": "Operates code, deployments, infrastructure, databases, and observability.",
+      "auth": [
+        "OAuth 2.0",
+        "API token",
+        "Basic"
+      ],
+      "access": "self-serve",
+      "api_surface": "REST + GraphQL + Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://docs.github.com/en/rest"
+        },
+        {
+          "claim": "Authentication signal: API token",
+          "url": "https://docs.github.com/en/rest"
+        },
+        {
+          "claim": "Authentication signal: Basic",
+          "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://docs.github.com/en/rest"
+        },
+        {
+          "claim": "API surface signal: GraphQL",
+          "url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.github.com/en/rest"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://docs.github.com/en/rest",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.github.com/en/rest/authentication/endpoints-available-for-github-app-installation-access-tokens",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:44.823Z"
+    },
+    {
+      "app": "Gladly",
+      "category": "Support & Helpdesk",
+      "one_line": "Runs customer conversations, tickets, and support workflows.",
+      "auth": [
+        "API token",
+        "Basic"
+      ],
+      "access": "self-serve",
+      "api_surface": "REST + Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: API token",
+          "url": "https://developer.gladly.com/rest/"
+        },
+        {
+          "claim": "Authentication signal: Basic",
+          "url": "https://developer.gladly.com/rest/"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://developer.gladly.com/"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developer.gladly.com/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developer.gladly.com/rest/"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://developer.gladly.com/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.gladly.com/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.gladly.com/rest/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://help.gladly.com/developer-tutorials/docs",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:25.074Z"
+    },
+    {
+      "app": "GoHighLevel",
+      "category": "Marketing, Ads, Email & Social",
+      "one_line": "Operates campaigns, audiences, email, and social publishing.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "unclear",
+      "api_surface": "REST + Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://marketplace.gohighlevel.com/docs/"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://marketplace.gohighlevel.com/docs/"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://marketplace.gohighlevel.com/docs/"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:32.078Z"
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email & Social",
+      "one_line": "Operates campaigns, audiences, email, and social publishing.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "self-serve",
+      "api_surface": "MCP",
+      "mcp": "documented signal found",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developers.google.com/google-ads/api/docs/get-started/introduction?hl=ja"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://developers.google.com/google-ads/api/docs/get-started/introduction?hl=ja",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/what-is-developer-assistant?hl=ja",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server?hl=ja",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:31.891Z"
+    },
+    {
+      "app": "Gorgias",
+      "category": "Support & Helpdesk",
+      "one_line": "Runs customer conversations, tickets, and support workflows.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "unclear",
+      "api_surface": "REST",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developers.gorgias.com/docs/private-vs-public-app"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://developers.gorgias.com/reference/introduction"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developers.gorgias.com/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.gorgias.com/docs/private-vs-public-app",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.gorgias.com/reference/introduction",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://partners.gorgias.com/signup",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:24.952Z"
+    },
+    {
+      "app": "Grain",
+      "category": "AI, Research & Media-native",
+      "one_line": "Creates, extracts, or searches AI-native media and knowledge.",
+      "auth": [],
+      "access": "approval-gated",
+      "api_surface": "MCP",
+      "mcp": "documented signal found",
+      "verdict": "needs-outreach",
+      "blocker": "Both self-serve and gated language found; human must identify which API product each applies to.",
+      "evidence": [
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://grain.com/"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://grain.com/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://grain.com/"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://grain.com/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://grain.com/integrations",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://grain.com/pricing",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": true,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:55:00.495Z"
+    },
+    {
+      "app": "Gumroad",
+      "category": "Ecommerce",
+      "one_line": "Manages storefronts, products, orders, and sellers.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://gumroad.com/api",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:39.356Z"
+    },
+    {
+      "app": "Harvest",
+      "category": "Productivity & Project Management",
+      "one_line": "Coordinates documents, projects, tasks, and time.",
+      "auth": [
+        "OAuth 2.0",
+        "API token",
+        "Basic"
+      ],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/"
+        },
+        {
+          "claim": "Authentication signal: API token",
+          "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/"
+        },
+        {
+          "claim": "Authentication signal: Basic",
+          "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://help.getharvest.com/api-v2/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://help.getharvest.com/api-v2/authentication-api/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://help.getharvest.com/api-v2/integrations-api/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:54.897Z"
+    },
+    {
+      "app": "Help Scout",
+      "category": "Support & Helpdesk",
+      "one_line": "Runs customer conversations, tickets, and support workflows.",
+      "auth": [],
+      "access": "self-serve",
+      "api_surface": "Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Authentication method not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developer.helpscout.com/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developer.helpscout.com/apps/getting-started/"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developer.helpscout.com/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.helpscout.com/webhooks/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.helpscout.com/apps/getting-started/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.helpscout.com/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:23.690Z"
+    },
+    {
+      "app": "Higgsfield",
+      "category": "AI, Research & Media-native",
+      "one_line": "Creates, extracts, or searches AI-native media and knowledge.",
+      "auth": [
+        "API key"
+      ],
+      "access": "unclear",
+      "api_surface": "MCP",
+      "mcp": "documented signal found",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://higgsfield.ai/cli"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://higgsfield.ai/cli"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://higgsfield.ai/cli",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://higgsfield.ai/mcp",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://higgsfield.ai/team-plan",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://higgsfield.ai/pricing",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:59.986Z"
+    },
+    {
+      "app": "HubSpot",
+      "category": "CRM & Sales",
+      "one_line": "Manages customer relationships, deals, and sales activity.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "self-serve",
+      "api_surface": "MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developers.hubspot.com/docs/apps/developer-platform/overview"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://developers.hubspot.com/docs/developer-tooling/overview"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developers.hubspot.com/docs/apps/developer-platform/overview"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developers.hubspot.com/docs/apps/developer-platform/overview"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://developers.hubspot.com/docs",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.hubspot.com/docs/developer-tooling/overview",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.hubspot.com/docs/getting-started/introduction",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.hubspot.com/docs/apps/developer-platform/overview",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:19.705Z"
+    },
+    {
+      "app": "Intercom",
+      "category": "Support & Helpdesk",
+      "one_line": "Runs customer conversations, tickets, and support workflows.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "self-serve",
+      "api_surface": "REST + MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developers.intercom.com/docs"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://developers.intercom.com/docs"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://developers.intercom.com/docs"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developers.intercom.com/docs"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://developers.intercom.com/docs",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.intercom.com/docs/references/webhooks/webhook-models",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:23.923Z"
+    },
+    {
+      "app": "iPayX",
+      "category": "Finance & Fintech",
+      "one_line": "Moves, reconciles, or enriches financial data.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://www.ipayx.ai/docs",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.ipayx.ai/pricing",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.ipayx.ai/partners",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:59.459Z"
+    },
+    {
+      "app": "Jira",
+      "category": "Productivity & Project Management",
+      "one_line": "Coordinates documents, projects, tasks, and time.",
+      "auth": [
+        "OAuth 2.0",
+        "Basic"
+      ],
+      "access": "unclear",
+      "api_surface": "REST + GraphQL + MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+        },
+        {
+          "claim": "Authentication signal: Basic",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+        },
+        {
+          "claim": "API surface signal: GraphQL",
+          "url": "https://developer.atlassian.com/platform/forge/add-scopes-to-call-an-atlassian-rest-api/"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://developer.atlassian.com/platform/forge/add-scopes-to-call-an-atlassian-rest-api/"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.atlassian.com/cloud/jira/platform/scopes-for-oauth-2-3LO-and-forge-apps/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.atlassian.com/platform/forge/add-scopes-to-call-an-atlassian-rest-api/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:51.575Z"
+    },
+    {
+      "app": "Klaviyo",
+      "category": "Marketing, Ads, Email & Social",
+      "one_line": "Operates campaigns, audiences, email, and social publishing.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "approval-gated",
+      "api_surface": "Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "needs-outreach",
+      "blocker": "Both self-serve and gated language found; human must identify which API product each applies to.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developers.klaviyo.com/en/reference/api_overview"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://developers.klaviyo.com/en/reference/api_overview"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developers.klaviyo.com/en/reference/api_overview"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://developers.klaviyo.com/en/reference/api_overview"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developers.klaviyo.com/en/reference/api_overview"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developers.klaviyo.com/en/reference/api_overview",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.klaviyo.com/en/reference/create_client_push_token",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.klaviyo.com/en/reference/unregister_client_push_token",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.klaviyo.com/en/reference/get_push_tokens_for_profile",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": true,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:34.478Z"
+    },
+    {
+      "app": "Lark",
+      "category": "Communications & Messaging",
+      "one_line": "Sends messages, calls, and team communications.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://open.larksuite.com/document",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:26.111Z"
+    },
+    {
+      "app": "Linear",
+      "category": "Productivity & Project Management",
+      "one_line": "Coordinates documents, projects, tasks, and time.",
+      "auth": [
+        "OAuth 2.0",
+        "API key",
+        "Basic"
+      ],
+      "access": "unclear",
+      "api_surface": "GraphQL + Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://linear.app/developers"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://linear.app/developers/graphql"
+        },
+        {
+          "claim": "Authentication signal: Basic",
+          "url": "https://linear.app/developers/oauth-2-0-authentication"
+        },
+        {
+          "claim": "API surface signal: GraphQL",
+          "url": "https://linear.app/developers"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://linear.app/developers"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://linear.app/developers",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://linear.app/developers/oauth-2-0-authentication",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://linear.app/developers/oauth-actor-authorization",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://linear.app/developers/graphql",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:51.711Z"
+    },
+    {
+      "app": "LinkedIn Ads",
+      "category": "Marketing, Ads, Email & Social",
+      "one_line": "Operates campaigns, audiences, email, and social publishing.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "approval-gated",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Both self-serve and gated language found; human must identify which API product each applies to.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/media-planning/integration-requirements-media-planning?view=li-lms-2026-11"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?view=li-lms-2026-11&amp;toc=/linkedin/marketing/toc.json&amp;bc=/linkedin/breadcrumb/toc.json"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?view=li-lms-2026-11&amp;toc=/linkedin/marketing/toc.json&amp;bc=/linkedin/breadcrumb/toc.json"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?view=li-lms-2026-11&amp;toc=/linkedin/marketing/toc.json&amp;bc=/linkedin/breadcrumb/toc.json"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-11",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/media-planning/integration-requirements-media-planning?view=li-lms-2026-11",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?view=li-lms-2026-11&amp;toc=/linkedin/marketing/toc.json&amp;bc=/linkedin/breadcrumb/toc.json",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/integration-requirements?view=li-lms-2026-11",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": true,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:31.442Z"
+    },
+    {
+      "app": "LiveAgent",
+      "category": "Support & Helpdesk",
+      "one_line": "Runs customer conversations, tickets, and support workflows.",
+      "auth": [
+        "API key"
+      ],
+      "access": "self-serve",
+      "api_surface": "REST",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://support.liveagent.com/840770-Complete-API-reference"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://support.liveagent.com/840770-Complete-API-reference"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://support.liveagent.com/802463-REST-API"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://support.liveagent.com/840770-Complete-API-reference",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://support.liveagent.com/802463-REST-API",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://support.liveagent.com/061754-How-to-make-REST-calls-in-PHP",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://support.liveagent.com/174246-Using-REST-API-without-mod_rewrite",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:26.651Z"
+    },
+    {
+      "app": "Magento",
+      "category": "Ecommerce",
+      "one_line": "Manages storefronts, products, orders, and sellers.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "self-serve",
+      "api_surface": "REST + GraphQL",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/"
+        },
+        {
+          "claim": "API surface signal: GraphQL",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://developer.adobe.com/commerce/webapi/rest/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.adobe.com/commerce/webapi/reference/rest/saas",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:38.811Z"
+    },
+    {
+      "app": "Mailchimp",
+      "category": "Marketing, Ads, Email & Social",
+      "one_line": "Operates campaigns, audiences, email, and social publishing.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "approval-gated",
+      "api_surface": "MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "needs-outreach",
+      "blocker": "Approval or commercial gate detected.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://mailchimp.com/developer/marketing/"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://mailchimp.com/developer/marketing/"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://mailchimp.com/developer/marketing/"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://mailchimp.com/developer/marketing/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://mailchimp.com/developer/integration-partner-program",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/webhooks",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:33.920Z"
+    },
+    {
+      "app": "Mermaid CLI",
+      "category": "AI, Research & Media-native",
+      "one_line": "Creates, extracts, or searches AI-native media and knowledge.",
+      "auth": [],
+      "access": "approval-gated",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Both self-serve and gated language found; human must identify which API product each applies to.",
+      "evidence": [
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://github.com/partners"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://github.com/pricing"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://github.com/mermaid-js/mermaid-cli",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://github.com/partners",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://github.com/pricing",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://learn.github.com/credentials",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": true,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:55:00.923Z"
+    },
+    {
+      "app": "Meta Ads",
+      "category": "Marketing, Ads, Email & Social",
+      "one_line": "Operates campaigns, audiences, email, and social publishing.",
+      "auth": [],
+      "access": "self-serve",
+      "api_surface": "MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "unclear",
+      "blocker": "Authentication method not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/collaborative-ads/managed-partner-ads/api-guide/prerequisites/generate-access-token-system-user"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.facebook.com/documentation/ads-commerce/conversions-api/conversion-leads-integration/crm-integration/2-getting-started-with-integration",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/collaborative-ads/managed-partner-ads/api-guide/prerequisites/generate-access-token-system-user",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference/business/system_user_access_tokens",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:38.297Z"
+    },
+    {
+      "app": "Monday.com",
+      "category": "Productivity & Project Management",
+      "one_line": "Coordinates documents, projects, tasks, and time.",
+      "auth": [
+        "OAuth 2.0",
+        "API key",
+        "API token"
+      ],
+      "access": "approval-gated",
+      "api_surface": "GraphQL + MCP",
+      "mcp": "documented signal found",
+      "verdict": "needs-outreach",
+      "blocker": "Both self-serve and gated language found; human must identify which API product each applies to.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developer.monday.com/api-reference/docs/basics"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://developer.monday.com/api-reference/docs/basics"
+        },
+        {
+          "claim": "Authentication signal: API token",
+          "url": "https://developer.monday.com/api-reference/docs/basics"
+        },
+        {
+          "claim": "API surface signal: GraphQL",
+          "url": "https://developer.monday.com/api-reference/docs/basics"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://developer.monday.com/api-reference/docs/basics"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://developer.monday.com/api-reference/docs/mcp-dynamic-client-registration"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developer.monday.com/api-reference/docs/basics"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developer.monday.com/api-reference/docs/basics",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.monday.com/api-reference/docs/control-mcp-access-with-oauth-app",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.monday.com/api-reference/docs/mcp-api-token",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.monday.com/api-reference/docs/mcp-dynamic-client-registration",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": true,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:53.638Z"
+    },
+    {
+      "app": "MongoDB Atlas",
+      "category": "Developer, Infra & Data",
+      "one_line": "Operates code, deployments, infrastructure, databases, and observability.",
+      "auth": [],
+      "access": "approval-gated",
+      "api_surface": "REST + GraphQL",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "needs-outreach",
+      "blocker": "Authentication method not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://www.mongodb.com/docs/atlas/api/"
+        },
+        {
+          "claim": "API surface signal: GraphQL",
+          "url": "https://www.mongodb.com/docs/atlas/api/"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://www.mongodb.com/company/partners"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://www.mongodb.com/docs/atlas/api/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.mongodb.com/company/partners",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://cloud.mongodb.com/ecosystem?filter=integration",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.mongodb.com/pricing",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:51.406Z"
+    },
+    {
+      "app": "MrScraper",
+      "category": "Data, SEO & Scraping",
+      "one_line": "Collects web data, rankings, enrichment, and search intelligence.",
+      "auth": [
+        "API key",
+        "API token"
+      ],
+      "access": "self-serve",
+      "api_surface": "MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://docs.mrscraper.com/docs/getting-started/quickstart"
+        },
+        {
+          "claim": "Authentication signal: API token",
+          "url": "https://docs.mrscraper.com/docs/getting-started/overview"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://docs.mrscraper.com/docs/getting-started/overview"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.mrscraper.com/docs/getting-started/overview"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://docs.mrscraper.com/docs/getting-started/overview"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.mrscraper.com/docs/integrations/webhook",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.mrscraper.com/docs/getting-started/quickstart",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:48.309Z"
+    },
+    {
+      "app": "Neo4j",
+      "category": "Developer, Infra & Data",
+      "one_line": "Operates code, deployments, infrastructure, databases, and observability.",
+      "auth": [],
+      "access": "self-serve",
+      "api_surface": "REST + GraphQL + MCP",
+      "mcp": "documented signal found",
+      "verdict": "unclear",
+      "blocker": "Authentication method not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://neo4j.com/docs/getting-started/"
+        },
+        {
+          "claim": "API surface signal: GraphQL",
+          "url": "https://neo4j.com/docs/http-api/current/"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://neo4j.com/docs/http-api/current/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://neo4j.com/docs/http-api/current/"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://neo4j.com/docs/http-api/current/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://neo4j.com/docs/getting-started/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://neo4j.com/docs/mcp/current/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://neo4j.com/docs/graphql/current/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:48.426Z"
+    },
+    {
+      "app": "Netlify",
+      "category": "Developer, Infra & Data",
+      "one_line": "Operates code, deployments, infrastructure, databases, and observability.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "unclear",
+      "api_surface": "Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://open-api.netlify.com/"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://open-api.netlify.com/"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://open-api.netlify.com/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:46.464Z"
+    },
+    {
+      "app": "NotebookLM",
+      "category": "AI, Research & Media-native",
+      "one_line": "Creates, extracts, or searches AI-native media and knowledge.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No supplied page could be read.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api",
+          "status": 404,
+          "ok": false,
+          "error": "HTTP 404"
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:58.461Z"
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity & Project Management",
+      "one_line": "Coordinates documents, projects, tasks, and time.",
+      "auth": [
+        "OAuth 2.0",
+        "API token"
+      ],
+      "access": "approval-gated",
+      "api_surface": "MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "needs-outreach",
+      "blocker": "Both self-serve and gated language found; human must identify which API product each applies to.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developers.notion.com/reference/intro"
+        },
+        {
+          "claim": "Authentication signal: API token",
+          "url": "https://developers.notion.com/reference/authentication"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://developers.notion.com/reference/intro"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developers.notion.com/reference/intro"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://developers.notion.com/guides/notion-api/quick-start"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developers.notion.com/reference/intro"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developers.notion.com/reference/intro",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.notion.com/reference/authentication",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.notion.com/reference/intro",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.notion.com/guides/notion-api/quick-start",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": true,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:52.761Z"
+    },
+    {
+      "app": "Otter AI",
+      "category": "AI, Research & Media-native",
+      "one_line": "Creates, extracts, or searches AI-native media and knowledge.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No supplied page could be read.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://help.otter.ai/hc/en-us/articles/13374962879383-Otter-MCP-Server",
+          "status": 403,
+          "ok": false,
+          "error": "HTTP 403"
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:57.202Z"
+    },
+    {
+      "app": "Paygent Connect",
+      "category": "Finance & Fintech",
+      "one_line": "Moves, reconciles, or enriches financial data.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No supplied page could be read.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://www.paygent.co.jp/service/connect/",
+          "status": 404,
+          "ok": false,
+          "error": "HTTP 404"
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:54.848Z"
+    },
+    {
+      "app": "Pinterest",
+      "category": "Marketing, Ads, Email & Social",
+      "one_line": "Operates campaigns, audiences, email, and social publishing.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developers.pinterest.com/docs/api/v5/introduction/?",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.pinterest.com/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:36.355Z"
+    },
+    {
+      "app": "Pipedrive",
+      "category": "CRM & Sales",
+      "one_line": "Manages customer relationships, deals, and sales activity.",
+      "auth": [
+        "OAuth 2.0",
+        "API token",
+        "Basic"
+      ],
+      "access": "approval-gated",
+      "api_surface": "Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "needs-outreach",
+      "blocker": "Both self-serve and gated language found; human must identify which API product each applies to.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developers.pipedrive.com/docs/api/v1"
+        },
+        {
+          "claim": "Authentication signal: API token",
+          "url": "https://developers.pipedrive.com/docs/api/v1"
+        },
+        {
+          "claim": "Authentication signal: Basic",
+          "url": "https://developers.pipedrive.com/docs/api/v1/Webhooks"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developers.pipedrive.com/docs/api/v1"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://developers.pipedrive.com/docs/api/v1"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developers.pipedrive.com/docs/api/v1"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developers.pipedrive.com/docs/api/v1",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.pipedrive.com/docs/api/v1/Webhooks",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.pipedrive.com/en/pricing",
+          "status": 403,
+          "ok": false,
+          "error": "HTTP 403"
+        }
+      ],
+      "contradiction": true,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:16.941Z"
+    },
+    {
+      "app": "PitchBook",
+      "category": "Finance & Fintech",
+      "one_line": "Moves, reconciles, or enriches financial data.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No supplied page could be read.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://pitchbook.com/data/api",
+          "status": 403,
+          "ok": false,
+          "error": "HTTP 403"
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:56.871Z"
+    },
+    {
+      "app": "Plaid",
+      "category": "Finance & Fintech",
+      "one_line": "Moves, reconciles, or enriches financial data.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "approval-gated",
+      "api_surface": "MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "needs-outreach",
+      "blocker": "Approval or commercial gate detected.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://plaid.com/docs/api/"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://plaid.com/docs/api/"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://plaid.com/docs/api/"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://plaid.com/docs/api/processor-partners/"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://plaid.com/docs/api/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://plaid.com/docs/api/webhooks/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://plaid.com/docs/api/oauth/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://plaid.com/docs/api/processor-partners/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:55.302Z"
+    },
+    {
+      "app": "Plain",
+      "category": "Support & Helpdesk",
+      "one_line": "Runs customer conversations, tickets, and support workflows.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No supplied page could be read.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://www.plain.com/docs/introduction",
+          "status": 404,
+          "ok": false,
+          "error": "HTTP 404"
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:25.190Z"
+    },
+    {
+      "app": "Podio",
+      "category": "CRM & Sales",
+      "one_line": "Manages customer relationships, deals, and sales activity.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "approval-gated",
+      "api_surface": "MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "needs-outreach",
+      "blocker": "Approval or commercial gate detected.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developers.podio.com/authentication"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://developers.podio.com/"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://www.progress.com/podio/partners"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developers.podio.com/"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://www.progress.com/podio/partners"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developers.podio.com/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.podio.com/authentication",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.podio.com/examples/webhooks",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.progress.com/podio/partners",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:23.142Z"
+    },
+    {
+      "app": "Pumble",
+      "category": "Communications & Messaging",
+      "one_line": "Sends messages, calls, and team communications.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No supplied page could be read.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://pumble.com/help/integrations/pumble-api/",
+          "status": 404,
+          "ok": false,
+          "error": "HTTP 404"
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:26.638Z"
+    },
+    {
+      "app": "Pylon",
+      "category": "Support & Helpdesk",
+      "one_line": "Runs customer conversations, tickets, and support workflows.",
+      "auth": [
+        "OAuth 2.0",
+        "API token"
+      ],
+      "access": "approval-gated",
+      "api_surface": "REST + MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "needs-outreach",
+      "blocker": "Approval or commercial gate detected.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp"
+        },
+        {
+          "claim": "Authentication signal: API token",
+          "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.usepylon.com/pylon-docs"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.usepylon.com/pylon-docs",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.usepylon.com/pylon-docs/developer/webhooks",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.usepylon.com/pylon-docs/knowledge-base/custom-authentication",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:23.016Z"
+    },
+    {
+      "app": "QuickBooks",
+      "category": "Finance & Fintech",
+      "one_line": "Moves, reconciles, or enriches financial data.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:58.243Z"
+    },
+    {
+      "app": "Ramp",
+      "category": "Finance & Fintech",
+      "one_line": "Moves, reconciles, or enriches financial data.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.ramp.com/developer-api/v1/overview",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:57.067Z"
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research & Media-native",
+      "one_line": "Creates, extracts, or searches AI-native media and knowledge.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "self-serve",
+      "api_surface": "MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://docs.reducto.ai/mcp-server"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://docs.reducto.ai/mcp-server"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://docs.reducto.ai/"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.reducto.ai/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://docs.reducto.ai/quickstart"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://docs.reducto.ai/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.reducto.ai/mcp-server",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.reducto.ai/quickstart",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.reducto.ai/studio-quickstart",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:55:02.016Z"
+    },
+    {
+      "app": "Salesforce",
+      "category": "CRM & Sales",
+      "one_line": "Manages customer relationships, deals, and sales activity.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No supplied page could be read.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developer.salesforce.com/docs",
+          "status": 403,
+          "ok": false,
+          "error": "HTTP 403"
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:15.473Z"
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "one_line": "Manages storefronts, products, orders, and sellers.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No supplied page could be read.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developer.salesforce.com/docs/commerce",
+          "status": 403,
+          "ok": false,
+          "error": "HTTP 403"
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:37.110Z"
+    },
+    {
+      "app": "SE Ranking",
+      "category": "Data, SEO & Scraping",
+      "one_line": "Collects web data, rankings, enrichment, and search intelligence.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "approval-gated",
+      "api_surface": "REST + MCP",
+      "mcp": "documented signal found",
+      "verdict": "needs-outreach",
+      "blocker": "Both self-serve and gated language found; human must identify which API product each applies to.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://seranking.com/api/integrations/mcp/"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://seranking.com/api.html"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://seranking.com/api.html"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://seranking.com/api.html"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://seranking.com/api-pricing.html"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://seranking.com/api.html"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://seranking.com/api.html",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://seranking.com/api/integrations/mcp/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://seranking.com/integrations.html",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://seranking.com/api-pricing.html",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": true,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:42.871Z"
+    },
+    {
+      "app": "SendGrid",
+      "category": "Marketing, Ads, Email & Social",
+      "one_line": "Operates campaigns, audiences, email, and social publishing.",
+      "auth": [
+        "API key"
+      ],
+      "access": "self-serve",
+      "api_surface": "Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://www.twilio.com/docs/sendgrid/api-reference"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://www.twilio.com/docs/sendgrid/api-reference"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://www.twilio.com/docs/sendgrid/api-reference"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.twilio.com/docs/sendgrid/api-reference/domain-authentication/authenticate-a-domain",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.twilio.com/docs/sendgrid/api-reference/domain-authentication/get-the-default-authentication",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.twilio.com/docs/sendgrid/api-reference/domain-authentication/retrieve-an-authenticated-domain",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:35.504Z"
+    },
+    {
+      "app": "Sentry",
+      "category": "Developer, Infra & Data",
+      "one_line": "Operates code, deployments, infrastructure, databases, and observability.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.sentry.io/api/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.sentry.io/api/guides/create-auth-token/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.sentry.io/api/integration/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.sentry.io/api/integrations/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:49.300Z"
+    },
+    {
+      "app": "Sherlock",
+      "category": "Data, SEO & Scraping",
+      "one_line": "Collects web data, rankings, enrichment, and search intelligence.",
+      "auth": [],
+      "access": "approval-gated",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Both self-serve and gated language found; human must identify which API product each applies to.",
+      "evidence": [
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://github.com/partners"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://github.com/pricing"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://github.com/sherlock-project/sherlock",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://github.com/partners",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://github.com/pricing",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://learn.github.com/credentials",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": true,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:45.220Z"
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "one_line": "Manages storefronts, products, orders, and sellers.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "approval-gated",
+      "api_surface": "GraphQL + MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "needs-outreach",
+      "blocker": "Approval or commercial gate detected.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://shopify.dev/docs/api/usage/authentication"
+        },
+        {
+          "claim": "API surface signal: GraphQL",
+          "url": "https://shopify.dev/docs/api"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://shopify.dev/docs/api/shopify-mcp"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://shopify.dev/docs/api"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://shopify.dev/docs/api/usage/access-scopes"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://shopify.dev/docs/api",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://shopify.dev/docs/api/usage/authentication",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://shopify.dev/docs/api/usage/access-scopes",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://shopify.dev/docs/api/shopify-mcp",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:37.938Z"
+    },
+    {
+      "app": "Slack",
+      "category": "Communications & Messaging",
+      "one_line": "Sends messages, calls, and team communications.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "self-serve",
+      "api_surface": "MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://docs.slack.dev/"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://docs.slack.dev/"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.slack.dev/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://docs.slack.dev/"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://docs.slack.dev/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://slack.com/marketplace/A0BSYHESRJR-hubspot-mcp?install_referrer=marketplace_api",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://api.slack.com/apps?new_app=1&manifest_json=%7B%22display_information%22%3A%7B%22name%22%3A%22Webhook%20alerts%22%2C%22description%22%3A%22Posts%20Webhook%20notifications%20to%20a%20Slack%20channel.%22%7D%2C%22features%22%3A%7B%22bot_user%22%3A%7B%22display_name%22%3A%22Webhook%20alerts%22%2C%22always_online%22%3Afalse%7D%7D%2C%22oauth_config%22%3A%7B%22scopes%22%3A%7B%22bot%22%3A%5B%22incoming-webhook%22%5D%7D%7D%2C%22settings%22%3A%7B%22incoming_webhooks%22%3A%7B%22incoming_webhooks_enabled%22%3Atrue%7D%2C%22org_deploy_enabled%22%3Afalse%2C%22socket_mode_enabled%22%3Afalse%2C%22token_rotation_enabled%22%3Afalse%7D%7D",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:26.288Z"
+    },
+    {
+      "app": "Smartsheet",
+      "category": "Productivity & Project Management",
+      "one_line": "Coordinates documents, projects, tasks, and time.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developers.smartsheet.com/api/smartsheet/openapi",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:52.900Z"
+    },
+    {
+      "app": "Snowflake",
+      "category": "Developer, Infra & Data",
+      "one_line": "Operates code, deployments, infrastructure, databases, and observability.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "unclear",
+      "api_surface": "REST",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.snowflake.com/en/developer-guide/sql-api/reference",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.snowflake.com/en/developer",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:49.743Z"
+    },
+    {
+      "app": "Squarespace",
+      "category": "Ecommerce",
+      "one_line": "Manages storefronts, products, orders, and sellers.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "self-serve",
+      "api_surface": "MCP + Webhooks",
+      "mcp": "documented signal found",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developers.squarespace.com/commerce-apis/contacts"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://developers.squarespace.com/commerce-apis/contacts"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://developers.squarespace.com/mcp/overview"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developers.squarespace.com/commerce-apis/contacts"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://developers.squarespace.com/commerce-apis/contacts",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.squarespace.com/mcp/overview",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:42.763Z"
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance & Fintech",
+      "one_line": "Moves, reconciles, or enriches financial data.",
+      "auth": [
+        "API key",
+        "Basic"
+      ],
+      "access": "approval-gated",
+      "api_surface": "Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "needs-outreach",
+      "blocker": "Approval or commercial gate detected.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://docs.stripe.com/api"
+        },
+        {
+          "claim": "Authentication signal: Basic",
+          "url": "https://docs.stripe.com/api"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.stripe.com/api"
+        },
+        {
+          "claim": "Approval, partner, enterprise, or contact-sales language detected",
+          "url": "https://docs.stripe.com/api"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.stripe.com/api",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.stripe.com/api/authentication",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.stripe.com/api/v2/core/account-tokens",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.stripe.com/api/v2/core/person-tokens",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:56.619Z"
+    },
+    {
+      "app": "Supabase",
+      "category": "Developer, Infra & Data",
+      "one_line": "Operates code, deployments, infrastructure, databases, and observability.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "unclear",
+      "api_surface": "GraphQL + MCP",
+      "mcp": "documented signal found",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://supabase.com/docs/guides/integrations"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://supabase.com/docs/guides/graphql"
+        },
+        {
+          "claim": "API surface signal: GraphQL",
+          "url": "https://supabase.com/docs/reference"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://supabase.com/docs/guides/getting-started/quickstarts/reactjs"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://supabase.com/docs/reference",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://supabase.com/docs/guides/graphql",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://supabase.com/docs/guides/integrations",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://supabase.com/docs/guides/getting-started/quickstarts/reactjs",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:47.233Z"
+    },
+    {
+      "app": "systeme.io",
+      "category": "Marketing, Ads, Email & Social",
+      "one_line": "Operates campaigns, audiences, email, and social publishing.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://help.systeme.io/article/2609-public-api",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:33.108Z"
+    },
+    {
+      "app": "Telegram",
+      "category": "Communications & Messaging",
+      "one_line": "Sends messages, calls, and team communications.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Authentication method not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://core.telegram.org/bots/api"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://core.telegram.org/bots/api",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://core.telegram.org/bots/webhooks",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:29.511Z"
+    },
+    {
+      "app": "Threads",
+      "category": "Marketing, Ads, Email & Social",
+      "one_line": "Operates campaigns, audiences, email, and social publishing.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "self-serve",
+      "api_surface": "Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developers.facebook.com/documentation/threads/get-started/get-access-tokens-and-permissions"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developers.facebook.com/documentation/threads"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developers.facebook.com/documentation/threads"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://developers.facebook.com/documentation/threads",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.facebook.com/documentation/threads/get-started/get-access-tokens-and-permissions",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.facebook.com/documentation/threads/get-started/app-access-tokens",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.facebook.com/documentation/threads/troubleshooting/debug-access-token",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:38.995Z"
+    },
+    {
+      "app": "Twenty",
+      "category": "CRM & Sales",
+      "one_line": "Manages customer relationships, deals, and sales activity.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "unclear",
+      "api_surface": "REST + GraphQL + Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://docs.twenty.com/developers/introduction"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://docs.twenty.com/developers/extend/oauth"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://docs.twenty.com/developers/extend/oauth"
+        },
+        {
+          "claim": "API surface signal: GraphQL",
+          "url": "https://docs.twenty.com/developers/introduction"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://docs.twenty.com/developers/introduction"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://docs.twenty.com/developers/introduction",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.twenty.com/developers/extend/webhooks",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.twenty.com/developers/extend/oauth",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://docs.twenty.com/getting-started/introduction",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:16.600Z"
+    },
+    {
+      "app": "Twilio",
+      "category": "Communications & Messaging",
+      "one_line": "Sends messages, calls, and team communications.",
+      "auth": [
+        "OAuth 2.0",
+        "Basic"
+      ],
+      "access": "unclear",
+      "api_surface": "REST + Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://www.twilio.com/docs/usage/api"
+        },
+        {
+          "claim": "Authentication signal: Basic",
+          "url": "https://www.twilio.com/docs/usage/webhooks/webhook-auth-profiles"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://www.twilio.com/docs/usage/api"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://www.twilio.com/docs/usage/api"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://www.twilio.com/docs/usage/api",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.twilio.com/docs/usage/webhooks/getting-started-twilio-webhooks",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.twilio.com/docs/usage/webhooks/webhook-auth-profiles",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.twilio.com/docs/usage/webhooks/webhook-settings",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:25.516Z"
+    },
+    {
+      "app": "Vercel",
+      "category": "Developer, Infra & Data",
+      "one_line": "Operates code, deployments, infrastructure, databases, and observability.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "unclear",
+      "api_surface": "REST + Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://vercel.com/docs/rest-api"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://vercel.com/docs/rest-api"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://vercel.com/docs/rest-api",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://vercel.com/docs/rest-api/access-groups/reads-an-access-group",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://vercel.com/docs/rest-api/webhooks/get-a-list-of-webhooks",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:46.290Z"
+    },
+    {
+      "app": "Vonage",
+      "category": "Communications & Messaging",
+      "one_line": "Sends messages, calls, and team communications.",
+      "auth": [
+        "API key"
+      ],
+      "access": "unclear",
+      "api_surface": "REST + Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://developer.vonage.com/en/api/pricing"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://developer.vonage.com/en/voice/voice-api/webhook-reference"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developer.vonage.com/en/api"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developer.vonage.com/en/api",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.vonage.com/en/voice/voice-api/webhook-reference",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.vonage.com/communications-apis/pricing",
+          "status": 403,
+          "ok": false,
+          "error": "HTTP 403"
+        },
+        {
+          "url": "https://developer.vonage.com/en/api/pricing",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:28.254Z"
+    },
+    {
+      "app": "Waterfall.io",
+      "category": "Data, SEO & Scraping",
+      "one_line": "Collects web data, rankings, enrichment, and search intelligence.",
+      "auth": [
+        "API key"
+      ],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://www.waterfall.io/"
+        }
+      ],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://www.waterfall.io/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:44.042Z"
+    },
+    {
+      "app": "WhatsApp Business",
+      "category": "Communications & Messaging",
+      "one_line": "Sends messages, calls, and team communications.",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "access": "self-serve",
+      "api_surface": "Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/reference/whatsapp-business-solution/access-token-api",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/authentication-international-rates",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:32.340Z"
+    },
+    {
+      "app": "WooCommerce",
+      "category": "Ecommerce",
+      "one_line": "Manages storefronts, products, orders, and sellers.",
+      "auth": [
+        "OAuth 2.0",
+        "API key",
+        "Basic"
+      ],
+      "access": "self-serve",
+      "api_surface": "REST + GraphQL + Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "build-now",
+      "blocker": "",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+        },
+        {
+          "claim": "Authentication signal: Basic",
+          "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+        },
+        {
+          "claim": "API surface signal: GraphQL",
+          "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+        },
+        {
+          "claim": "Self-service credential or developer-signup language detected",
+          "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": false,
+      "pages": [
+        {
+          "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/wp-api-v2.html",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/wp-api-v1.html",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/v3.html",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:36.697Z"
+    },
+    {
+      "app": "Xero",
+      "category": "Finance & Fintech",
+      "one_line": "Moves, reconciles, or enriches financial data.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developer.xero.com/documentation/api/accounting/overview",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:56.564Z"
+    },
+    {
+      "app": "YouTube Transcript",
+      "category": "AI, Research & Media-native",
+      "one_line": "Creates, extracts, or searches AI-native media and knowledge.",
+      "auth": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "access": "unclear",
+      "api_surface": "REST + MCP",
+      "mcp": "documented signal found",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://transcriptapi.com/docs/mcp/"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://transcriptapi.com/docs/mcp/"
+        },
+        {
+          "claim": "API surface signal: REST",
+          "url": "https://transcriptapi.com/docs/mcp/"
+        },
+        {
+          "claim": "API surface signal: MCP",
+          "url": "https://transcriptapi.com/docs/"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://transcriptapi.com/docs/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://transcriptapi.com/docs/mcp/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://transcriptapi.com/docs/getting-started/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://transcriptapi.com/docs/api/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:55:02.609Z"
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support & Helpdesk",
+      "one_line": "Runs customer conversations, tickets, and support workflows.",
+      "auth": [
+        "OAuth 2.0",
+        "API key",
+        "Basic"
+      ],
+      "access": "unclear",
+      "api_surface": "Webhooks",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "Credential availability not evidenced on inspected pages.",
+      "evidence": [
+        {
+          "claim": "Authentication signal: OAuth 2.0",
+          "url": "https://developer.zendesk.com/api-reference/integration-services/inbound-webhooks/inbound_webhooks/"
+        },
+        {
+          "claim": "Authentication signal: API key",
+          "url": "https://developer.zendesk.com/api-reference/integration-services/inbound-webhooks/inbound_webhooks/"
+        },
+        {
+          "claim": "Authentication signal: Basic",
+          "url": "https://developer.zendesk.com/api-reference/integration-services/inbound-webhooks/inbound_webhooks/"
+        },
+        {
+          "claim": "API surface signal: Webhooks",
+          "url": "https://developer.zendesk.com/api-reference/"
+        }
+      ],
+      "confidence": "medium",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://developer.zendesk.com/api-reference/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.zendesk.com/api-reference/integration-services/inbound-webhooks/inbound_webhooks/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.zendesk.com/api-reference/voice/talk-partner-edition-api/introduction/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://developer.zendesk.com/api-reference/webhooks/introduction/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:21.951Z"
+    },
+    {
+      "app": "Zoho Cliq",
+      "category": "Communications & Messaging",
+      "one_line": "Sends messages, calls, and team communications.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No supplied page could be read.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://www.zoho.com/cliq/help/platform/rest-api.html",
+          "status": 404,
+          "ok": false,
+          "error": "HTTP 404"
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:25.396Z"
+    },
+    {
+      "app": "Zoho CRM",
+      "category": "CRM & Sales",
+      "one_line": "Manages customer relationships, deals, and sales activity.",
+      "auth": [],
+      "access": "unclear",
+      "api_surface": "unclear",
+      "mcp": "not evidenced on inspected pages",
+      "verdict": "unclear",
+      "blocker": "No API-surface evidence found on inspected pages.",
+      "evidence": [],
+      "confidence": "low",
+      "needs_human": true,
+      "pages": [
+        {
+          "url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.zoho.com/crm/developer/docs/api/v8/get-records.html",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.zoho.com/crm/developer/docs/api/v8/module-meta.html",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        },
+        {
+          "url": "https://www.zoho.com/crm/developer/docs/api/v8/composite-overview.html",
+          "status": 200,
+          "ok": true,
+          "error": ""
+        }
+      ],
+      "contradiction": false,
+      "provider": "multi-page-deterministic-evidence-agent",
+      "composio_status": "connected; 0 research tools exposed",
+      "researched_at": "2026-11-23T10:54:16.806Z"
+    }
+  ]
+}

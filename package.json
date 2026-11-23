@@ -1,0 +1,24 @@
+{
+  "name": "composio-product-ops-research",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "research": "node agent/research-agent.mjs",
+    "research:local": "node agent/research-agent-local.mjs",
+    "research:rules": "node agent/research-agent-rules.mjs",
+    "research:deep": "node agent/research-agent-deep.mjs",
+    "promote:deep": "node agent/promote-deep.mjs",
+    "review": "node agent/review.mjs",
+    "check": "node agent/validate-data.mjs"
+  },
+  "dependencies": {
+    "@composio/core": "^0.31.0",
+    "openai": "^6.0.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

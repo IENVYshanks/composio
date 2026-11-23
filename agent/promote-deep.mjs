@@ -1,0 +1,13 @@
+import fs from "node:fs";
+import path from "node:path";
+import {fileURLToPath} from "node:url";
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const runDir=path.join(root,"research","runs");
+const runs=fs.readdirSync(runDir).filter(x=>x.startsWith("deep-")&&x.endsWith(".jsonl")).sort();
+if(!runs.length)throw new Error("No deep research checkpoint found.");
+const input=path.join(runDir,runs.at(-1));
+const rows=fs.readFileSync(input,"utf8").trim().split(/\r?\n/).filter(Boolean).map(JSON.parse).sort((a,b)=>a.app.localeCompare(b.app));
+if(rows.length!==100)throw new Error(`Refusing to promote incomplete run (${rows.length}/100 rows).`);
+const output=path.join(root,"research","deep-findings.json");
+fs.writeFileSync(output,JSON.stringify({generated_at:new Date().toISOString(),source_run:path.basename(input),method:"multi-page deterministic evidence crawl; human audit overrides applied in UI",rows},null,2)+"\n");
+console.log(`Promoted ${rows.length} records from ${path.basename(input)} to research/deep-findings.json`);
