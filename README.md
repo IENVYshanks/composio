@@ -6,7 +6,7 @@ A research-backed map of 100 applications across authentication, developer acces
 
 - 100 apps in 10 categories
 - 100 deep-research findings with claim-level evidence
-- 26 preserved human audits: 7 accepted and 19 corrected
+- 54 preserved human audits: 7 accepted and 47 corrected
 - Snapshot date: 23 November 2026
 
 The rendered report calculates verdict totals from the JSON at runtime. Do not copy those totals into documentation because commercial access, authentication, and MCP support change frequently.
@@ -32,7 +32,21 @@ The validator checks the 100-app/10-category invariant, unique app names, deep-f
 
 ## Research workflows
 
-Copy `.env.example` to `.env` and provide only the credentials needed by the workflow you choose.
+Repository agents should follow [`AGENTS.md`](AGENTS.md). The supported default is the deterministic workflow below: it requires Node.js and internet access for documentation refreshes, but it does **not** require Ollama, a downloaded model, a GPU, or any local LLM. Copy `.env.example` to `.env` only when using an optional hosted service, and provide only the credentials needed by that workflow.
+
+### Default agent pass (no local LLM)
+
+```bash
+npm run research:rules -- --limit 10 --concurrency 6
+```
+
+For deeper first-party evidence collection without an LLM:
+
+```bash
+npm run research:deep -- --limit 10 --pages 4 --concurrency 4
+```
+
+These workflows fetch the first-party seed URLs in `research/apps.json`, write immutable JSONL checkpoints under `research/runs/`, and accept uncertainty instead of inventing unsupported claims. Optional `COMPOSIO_API_KEY` discovery must not prevent either workflow from running.
 
 ### OpenAI-assisted pass
 
@@ -43,21 +57,13 @@ npm run review
 
 This writes immutable JSONL checkpoints under `research/runs/`. If `COMPOSIO_API_KEY` is configured, the agent also inspects the connected Composio tool catalog. A scoped `COMPOSIO_MCP_URL` can expose research tools to the model.
 
-### Local-model pass
+### Optional local-model pass
 
 ```bash
 npm run research:local -- --limit 10
 ```
 
-This uses the configured Ollama model and only the text fetched from the supplied first-party page. It prefers `unclear` to unsupported inference.
-
-### Deterministic evidence pass
-
-```bash
-npm run research:rules -- --concurrency 6
-```
-
-This no-LLM workflow records explicit authentication, API, webhook, MCP, access, and gating signals from the supplied page.
+This optional developer-only workflow uses the configured Ollama model and only the text fetched from the supplied first-party page. It is not required for automated agents, validation, review, promotion, or serving the site.
 
 ### Multi-page evidence pass
 
