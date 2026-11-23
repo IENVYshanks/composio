@@ -1,14 +1,6 @@
 const categoryDescriptions={
   "CRM & Sales":"Manages customer relationships, deals, and sales activity.","Support & Helpdesk":"Runs customer conversations, tickets, and support workflows.","Communications & Messaging":"Sends messages, calls, and team communications.","Marketing, Ads, Email & Social":"Operates campaigns, audiences, email, and social publishing.","Ecommerce":"Manages storefronts, products, orders, and sellers.","Data, SEO & Scraping":"Collects web data, rankings, enrichment, and search intelligence.","Developer, Infra & Data":"Operates code, deployments, infrastructure, databases, and observability.","Productivity & Project Management":"Coordinates documents, projects, tasks, and time.","Finance & Fintech":"Moves, reconciles, or enriches financial data.","AI, Research & Media-native":"Creates, extracts, or searches AI-native media and knowledge."
 };
-const oauth=new Set(["Salesforce","HubSpot","Pipedrive","Attio","Podio","Zoho CRM","Zendesk","Intercom","Front","Plain","Help Scout","Gorgias","Slack","Zoho Cliq","Lark","Discord","WhatsApp Business","Aircall","Google Ads","Meta Ads","LinkedIn Ads","GoHighLevel","Mailchimp","Klaviyo","Pinterest","Threads","Shopify","BigCommerce","Salesforce Commerce Cloud","Squarespace","Ecwid","Amazon Selling Partner","GitHub","Vercel","Netlify","Cloudflare","Supabase","Snowflake","MongoDB Atlas","Sentry","Notion","Airtable","Linear","Jira","Asana","Monday.com","ClickUp","Coda","Smartsheet","Harvest","Stripe","Plaid","QuickBooks","Xero","Brex","Ramp","Devin"]);
-const basic=new Set(["Freshdesk","LiveAgent","Twilio","Vonage","WooCommerce","DataForSEO","SE Ranking","Ahrefs"]);
-const publicToken=new Set(["Twenty","Close","Copper","DealCloud","Pylon","Gladly","Pumble","Telegram","SendGrid","Magento","Gumroad","MrScraper","Apify","Firecrawl","Bright Data","Clay","Neo4j","Datadog","Reducto","YouTube Transcript"]);
-const gated=new Set(["DealCloud","Gladly","LinkedIn Ads","Salesforce Commerce Cloud","Amazon Selling Partner","Ahrefs","Waterfall.io","Snowflake","Paygent Connect","PitchBook","NotebookLM","Consensus","Devin"]);
-const blocked=new Set(["fanbasis","Waterfall.io","Paygent Connect","iPayX","Higgsfield","Grain"]);
-const mcp=new Set(["GitHub","Cloudflare","Supabase","MongoDB Atlas","Notion","Linear","Stripe","Otter AI","Devin"]);
-const narrow=new Set(["Pumble","systeme.io","Gumroad","Sherlock","NotebookLM","Otter AI","Fathom","Consensus","Higgsfield","Mermaid CLI","YouTube Transcript"]);
-const graphql=new Set(["Shopify","Linear","Monday.com","GitHub"]);
 let audit={};
 const hash=s=>[...s].reduce((a,c)=>(a*31+c.charCodeAt(0))>>>0,7);
 
@@ -47,7 +39,12 @@ function render(data){
   const search=document.querySelector("#search"),verdict=document.querySelector("#verdict"),rows=document.querySelector("#rows"),count=document.querySelector("#resultCount");
   const draw=()=>{const q=search.value.toLowerCase();const filtered=data.filter(x=>(category.value==="all"||x.category===category.value)&&(verdict.value==="all"||x.verdict===verdict.value)&&`${x.name} ${x.category} ${x.auth} ${x.access} ${x.surface}`.toLowerCase().includes(q));count.textContent=`SHOWING ${filtered.length} OF ${data.length} APPS`;rows.innerHTML=filtered.map(x=>`<tr><td><span class="app-name">${x.id}. ${x.name}</span><span class="desc">${x.description}</span></td><td>${x.auth}</td><td>${x.access}</td><td>${x.surface}${x.mcp?` <span class="pill">MCP</span>`:""}</td><td><span class="pill ${x.verdict==="Build now"?"good":x.verdict==="Needs outreach"?"warn":"bad"}">${x.verdict}</span></td><td><a class="evidence" href="${x.url}" target="_blank" rel="noreferrer">Official source ↗</a><span class="confidence">${x.confidence} confidence</span></td></tr>`).join("")||`<tr><td colspan="6">No matches.</td></tr>`};
   [search,category,verdict].forEach(el=>el.addEventListener(el===search?"input":"change",draw));document.querySelector("#reset").onclick=()=>{search.value="";category.value="all";verdict.value="all";draw()};draw();
-  document.querySelector("#auditGrid").innerHTML=Object.entries(audit).map(([name,[status,note,evidence]])=>`<article class="audit-card ${status}"><span class="status">${status==="accepted"?"✓ ACCEPTED":"↺ CORRECTED"}</span><div><h3>${name}</h3><p>${note}</p><a class="audit-link" href="${evidence[0]}" target="_blank" rel="noreferrer">Check evidence ↗</a></div></article>`).join("");
+  const auditEntries=Object.entries(audit);
+  const accepted=auditEntries.filter(([, [status]])=>status==="accepted").length;
+  const corrected=auditEntries.length-accepted;
+  document.querySelector("#auditAccepted").textContent=`${accepted}/${auditEntries.length}`;
+  document.querySelector("#auditCorrected").textContent=corrected;
+  document.querySelector("#auditGrid").innerHTML=auditEntries.map(([name,[status,note,evidence]])=>`<article class="audit-card ${status}"><span class="status">${status==="accepted"?"✓ ACCEPTED":"↺ CORRECTED"}</span><div><h3>${name}</h3><p>${note}</p><a class="audit-link" href="${evidence[0]}" target="_blank" rel="noreferrer">Check evidence ↗</a></div></article>`).join("");
 }
 
 load().then(render).catch(err=>{document.querySelector("#rows").innerHTML=`<tr><td colspan="6">${err.message}. Run this page through the local server described in README.md.</td></tr>`;console.error(err)});

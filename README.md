@@ -1,70 +1,109 @@
 # Agent-toolkit opportunity map
 
-A self-contained case study for Composio's AI Product Ops take-home. It maps 100 requested apps across authentication, developer access, API surface, MCP availability, and buildability.
+A research-backed map of 100 applications across authentication, developer access, API surface, MCP availability, and practical buildability. Automated evidence collection is kept separate from manually verified corrections so stale product claims can be replaced without erasing the original crawl.
+
+## Current snapshot
+
+- 100 apps in 10 categories
+- 100 deep-research findings with claim-level evidence
+- 26 preserved human audits: 7 accepted and 19 corrected
+- Snapshot date: 23 November 2026
+
+The rendered report calculates verdict totals from the JSON at runtime. Do not copy those totals into documentation because commercial access, authentication, and MCP support change frequently.
 
 ## View the report
 
-Run locally:
+Node.js 22 or newer is recommended.
 
 ```bash
 npm install
 npm run dev
 ```
 
-The report has no build step. Deploy the repository root to GitHub Pages, Netlify, or Vercel as a static site.
+Open the local URL printed by `serve`. The project has no compilation step and can be deployed as a static site from the repository root.
 
-## Run the research agent
-
-Node 22.22.3+ is required by the current Composio TypeScript SDK.
+## Validate the maintained data
 
 ```bash
-cp .env.example .env
-npm install
+npm run check
+```
+
+The validator checks the 100-app/10-category invariant, unique app names, deep-finding coverage, audit membership, and HTTPS evidence URLs.
+
+## Research workflows
+
+Copy `.env.example` to `.env` and provide only the credentials needed by the workflow you choose.
+
+### OpenAI-assisted pass
+
+```bash
 npm run research -- --limit 10
 npm run review
 ```
 
-No OpenAI credits? Use the local Ollama fallback (Ollama must be running):
+This writes immutable JSONL checkpoints under `research/runs/`. If `COMPOSIO_API_KEY` is configured, the agent also inspects the connected Composio tool catalog. A scoped `COMPOSIO_MCP_URL` can expose research tools to the model.
+
+### Local-model pass
 
 ```bash
 npm run research:local -- --limit 10
 ```
 
-The local workflow fetches each supplied first-party documentation URL, extracts structured findings with the configured local model, and flags unreadable or insufficient pages for human review. It does not claim that Composio supplied browser tools when the connected project exposes none.
+This uses the configured Ollama model and only the text fetched from the supplied first-party page. It prefers `unclear` to unsupported inference.
 
-For a no-LLM, no-credit evidence pass:
+### Deterministic evidence pass
 
 ```bash
 npm run research:rules -- --concurrency 6
 ```
 
-This deterministic agent fetches all first-party URLs, records auditable auth/API/MCP/access signals, and sends weak or contradictory rows to the same human-review queue. It intentionally prefers `unclear` over guessing.
+This no-LLM workflow records explicit authentication, API, webhook, MCP, access, and gating signals from the supplied page.
 
-For the submission-grade multi-page pass:
+### Multi-page evidence pass
 
 ```bash
 npm run research:deep -- --pages 4 --concurrency 4
+npm run review
+npm run promote:deep
 ```
 
-The deep agent follows relevant first-party authentication, API-reference, access/partner, pricing, webhook, GraphQL, and MCP links from each supplied page. It records page-level fetch outcomes, claim-level evidence URLs, and contradictions before human review.
+The deep workflow follows relevant first-party developer, authentication, pricing, partner, webhook, GraphQL, and MCP links. Promotion refuses incomplete runs and replaces `research/deep-findings.json` only when all 100 apps are present. Human corrections remain separate in `research/human-audit.json` and override the automated row in the UI.
 
-The agent reads `research/apps.json`, asks an LLM for structured findings, uses Composio's SDK to discover available research tools, and can use a scoped Composio MCP session when `COMPOSIO_MCP_URL` is supplied. It writes auditable JSONL checkpoints to `research/runs/`. It never overwrites the curated report automatically: a human must review evidence before promotion.
+## Verdicts
 
-`npm run review` opens the latest run's flagged records in an interactive terminal queue. A reviewer can accept, correct, reject, or defer each finding. Decisions are appended to a separate `*.reviewed.jsonl` file so the original model output remains immutable. The curated audit sample is preserved in `research/human-audit.json` with the agent claim, human finding, decision, evidence, and review date.
+| Verdict | Meaning |
+| --- | --- |
+| `Build now` | A documented integration surface and practical credential path are available without a bespoke commercial approval process. Payment alone does not automatically prevent this verdict. |
+| `Needs outreach` | The integration exists, but a contract, enterprise license, admin enablement, partner review, or provider approval is required. |
+| `Blocked` | No usable programmatic surface or credential path was evidenced for the intended integration. |
+| `Unclear` | Available first-party evidence is insufficient or contradictory; research must continue before roadmap use. |
 
-## Verification philosophy
+An application with a paid, contract-gated API is normally `Needs outreach`, not `Blocked`. A public documentation page is not by itself proof of self-serve credentials.
 
-- Every row links to a first-party docs, developer, or product page.
-- `Verified` means the claim was manually checked against that evidence during the sample audit.
-- `High`, `Medium`, and `Low` describe confidence outside the audit sample.
-- “Gated” is a valid product finding—not a research failure.
-- The page exposes the agent's misses and the human corrections.
+## Evidence and confidence
 
-## Structure
+- Prefer current first-party developer, help, pricing, and product pages.
+- Every promoted automated claim should have a claim-level URL.
+- `Verified` in the UI means a human-audit override exists.
+- `High`, `Medium`, and `Low` describe the automated finding's evidence quality, not the provider's reliability.
+- “Not evidenced” means the inspected pages did not prove the feature; it is not a universal claim that the feature does not exist.
+- Product access, API access, marketplace publication, and MCP access must be evaluated separately.
 
-- `index.html`, `styles.css`, `app.js` — static case study
-- `research/apps.json` — canonical 100-app input set
-- `agent/research-agent.mjs` — checkpointed research workflow
-- `agent/validate-data.mjs` — dataset integrity checks
+## Repository map
 
-Research snapshot: **23 November 2026**. Product access and APIs change; re-run the workflow before operational use.
+- `index.html`, `styles.css`, `app.js` — static report
+- `research/apps.json` — canonical 100-app input list and starting URLs
+- `research/deep-findings.json` — promoted automated evidence snapshot
+- `research/human-audit.json` — append-only reviewed corrections and overrides
+- `research/runs/` — immutable JSONL research and review checkpoints
+- `agent/research-agent*.mjs` — OpenAI, local-model, deterministic, and deep research workflows
+- `agent/review.mjs` — terminal review queue
+- `agent/promote-deep.mjs` — complete-run promotion guard
+- `agent/validate-data.mjs` — maintained-data integrity checks
+- `docs/DATA-MODEL.md` — field definitions and precedence rules
+- `docs/MAINTENANCE.md` — update and stale-evidence procedure
+- `docs/RESEARCH-METHODOLOGY.md` — research and review methodology
+
+## Important limitation
+
+This is a dated research snapshot, not a guarantee of current provider behavior. Recheck first-party evidence before implementation or commercial commitment, especially for pricing, trials, partner programs, enterprise licensing, OAuth registration, rate limits, and recently launched MCP products.
